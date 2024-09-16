@@ -30,7 +30,7 @@ A full-stack personal finance tracker that helps users manage their transactions
     cd money-tracker-app
     ```
 
-3. Install dependencies for both frontend :
+3. Install dependencies for frontend :
     ```bash
     npm install
     ```
