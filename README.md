@@ -46,3 +46,6 @@ A full-stack personal finance tracker that helps users manage their transactions
 
 Create a `.env` file in the root directory and add the following:
 
+
+![My Image](./image.png)
+
