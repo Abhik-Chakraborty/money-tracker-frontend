@@ -1,0 +1,175 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #17181F;
+  color: #ddd
+}
+
+main{
+  max-width: 360px;
+  margin: 30px auto;
+}
+
+h1{
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+form{
+  margin-top: 20px;
+}
+
+form input{
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+  
+}
+
+form select{
+  width: 100%;
+  background-color: transparent;
+  color: #777;
+  border: 2px solid #30313d;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+form.select.option {
+  color: #777;
+  background-color: transparent;
+}
+
+form input[type="datetime-local"]{
+  color: #777;
+}
+
+form div.basic{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+form button{
+  width: 100%;
+  margin-top: 5px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ddd;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+div.transactions{
+  margin-top: 10px;
+
+}
+
+div.transaction{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-top: 1px solid #30313d;
+}
+div.transaction:first-child{
+  border-top: 0;
+}
+
+div.transaction div.name{
+  font-size: 1rem;
+}
+
+div.transaction div.description{
+  font-size: .7rem;
+  color: #888;
+}
+
+div.right{
+  text-align: right;
+}
+div.price.green{
+  color: #1c1;
+}
+
+div.price.red{
+  color: #c11;
+}
+div.transaction div.datetime{
+  font-size: .7rem;
+  color: #888;
+}
+
+/* card  */
+
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1%;
+  background-color: #17181F;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  height: 500px; /* Fixed height for the card */
+  display:flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  text-align: center;
+  /*Allow main content to expand */ 
+  flex: 1;
+  /* Hide overflow outside the card */
+  overflow: hidden; 
+}
+
+.transactions {
+  margin-top: 20px;
+  padding-right: 10px; /* Add padding to prevent overlap with scrollbar */
+  overflow-y:auto; /* Enable vertical scroll */
+  flex: 1; /* Allow transactions to take remaining space */
+  height: 250px; /* Fixed height for the scrollable area */
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  
+}
+
+.transaction .left {
+  text-align: left;
+}
+
+.transaction .right {
+  text-align: right;
+  flex: 1;
+  padding-left: 10px;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.price.red {
+  color: red;
+}
+
+.price.green {
+  color: green;
+}
